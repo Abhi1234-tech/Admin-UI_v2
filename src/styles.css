@@ -1,0 +1,162 @@
+/* File: styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+* {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+.dark-mode .app-container {
+  background-color: rgb(27, 27, 27);
+}
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #5eca61;
+  text-align: left;
+}
+
+tr.selected {
+  background-color: #f0f0f0;
+}
+
+.pagination-container {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex !important;
+}
+
+.pagination-buttons {
+  display: inline-flex;
+}
+
+.darkorlight {
+  background-color: black !important;
+  margin-left: 15vw;
+}
+
+.darkorlight:hover {
+  box-shadow: 1px 1px 20px white;
+}
+
+button {
+  background-color: #5eca61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+button.active {
+  background-color: #2a622d;
+}
+
+.delete-selected-container {
+  margin-top: 20px;
+}
+
+/*Responsivness added as mentioned in last feedback*/
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* Used Icon pack for mobile view*/
+.fa {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-modal h2 {
+  margin-top: 0;
+}
+
+.edit-modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-modal input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  background-color: #5eca61;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
